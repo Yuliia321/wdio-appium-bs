@@ -31,7 +31,7 @@ export const config = {
             app: process.env.BROWSERSTACK_IOS_APP_ID,
             buildIdentifier: "${BUILD_NUMBER}",
             browserstackLocal: false,
-            testObservability: false,
+            testObservability: true,
             debug: true,
             networkLogs: true,
             consoleLogs: "warn"
