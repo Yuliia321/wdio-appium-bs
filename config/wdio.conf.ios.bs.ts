@@ -7,6 +7,7 @@ if (process.env.NODE_ENV !== 'CI') {
 
 export const config = {
     ...sharedConfig,
+    maxInstances: 1,
     user: process.env.BROWSERSTACK_USERNAME,
     key: process.env.BROWSERSTACK_ACCESS_KEY,
     hostname: 'hub.browserstack.com',
