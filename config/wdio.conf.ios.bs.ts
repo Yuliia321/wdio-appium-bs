@@ -12,16 +12,17 @@ export const config = {
     hostname: 'hub.browserstack.com',
 
     capabilities: [{
-        'bstack:options': {
-          deviceName: 'iPhone 14 Pro Max',
-          osVersion: '16',
-          deviceOrientation: 'portrait',
-        },
-        'appium:options': {
-          autoAcceptAlerts: true,
-          newCommandTimeout: 300000,
-        }
-      }],
+    'bstack:options': {
+      deviceName: 'iPhone 14 Pro Max',
+      osVersion: '16',
+      deviceOrientation: 'portrait',
+    },
+    'appium:app': process.env.BROWSERSTACK_IOS_APP_ID,
+    'appium:options': {
+      autoAcceptAlerts: true,
+      newCommandTimeout: 300000,
+    }
+}],
     services: [
         [
           'browserstack',
