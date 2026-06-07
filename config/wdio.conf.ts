@@ -241,21 +241,8 @@ export const config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {object}         browser      instance of created browser/device session
      */
-    before: async function (capabilities, specs) {
+before: async function (capabilities, specs) {
         console.log('Session started successfully');
-        
-        // Add connection health check
-        try {
-            const sessionId = await browser.getSessionId();
-            console.log('Session ID:', sessionId);
-            
-            // Verify connection with a simple command
-            await browser.getPageSource();
-            console.log('Connection verified successfully');
-        } catch (error) {
-            console.error('Connection verification failed:', error.message);
-            throw new Error('Failed to establish stable connection to device');
-        }
     },
     /**
      * Runs before a WebdriverIO command gets executed.

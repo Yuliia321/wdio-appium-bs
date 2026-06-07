@@ -1,2 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites tests="5" failures="0" errors="0" skipped="0">
+  <testsuite name="Sample iOS App" timestamp="2026-06-04T23:03:51" time="19.713" tests="5" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Sample iOS App"/>
+      <property name="capabilities" value="ios.iphone14promax"/>
+      <property name="file" value="file://./test/specs/test.e2e.ts"/>
+    </properties>
+    <testcase classname="ios.iphone14promax.Sample_iOS_App" name="should display UI Elements screen on launch" time="3.074">
+      <system-out><![CDATA[
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/execute/sync - {"script":"<script> [19 bytes]","args":[]}
+RESULT: {"script":"<script> [19 bytes]","args":[]}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element - {"using":"accessibility id","value":"UI Elements"}
+RESULT: {"using":"accessibility id","value":"UI Elements"}
+COMMAND: GET /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/0C000000-0000-0000-5A23-000000000000/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="ios.iphone14promax.Sample_iOS_App" name="should navigate to Text screen" time="2.769">
+      <system-out><![CDATA[
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/execute/sync - {"script":"<script> [19 bytes]","args":[]}
+RESULT: {"script":"<script> [19 bytes]","args":[]}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element - {"using":"accessibility id","value":"Text Button"}
+RESULT: {"using":"accessibility id","value":"Text Button"}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/15000000-0000-0000-5A23-000000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element - {"using":"accessibility id","value":"Text"}
+RESULT: {"using":"accessibility id","value":"Text"}
+COMMAND: GET /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/17000000-0000-0000-5A23-000000000000/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="ios.iphone14promax.Sample_iOS_App" name="should navigate back and open Alert screen" time="6.132">
+      <system-out><![CDATA[
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/execute/sync - {"script":"<script> [19 bytes]","args":[]}
+RESULT: {"script":"<script> [19 bytes]","args":[]}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/back - {}
+RESULT: {}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element - {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Alert\"]"}
+RESULT: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name=\"Alert\"]"}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/18000000-0000-0000-5A23-000000000000/click - {}
+RESULT: {}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element - {"using":"accessibility id","value":"Alert"}
+RESULT: {"using":"accessibility id","value":"Alert"}
+COMMAND: GET /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/1D000000-0000-0000-5A23-000000000000/displayed - {}
+RESULT: {}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element - {"using":"accessibility id","value":"OK"}
+RESULT: {"using":"accessibility id","value":"OK"}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/33000000-0000-0000-5A23-000000000000/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="ios.iphone14promax.Sample_iOS_App" name="should navigate to Web View tab" time="3.891">
+      <system-out><![CDATA[
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/execute/sync - {"script":"<script> [19 bytes]","args":[]}
+RESULT: {"script":"<script> [19 bytes]","args":[]}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/back - {}
+RESULT: {}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element - {"using":"accessibility id","value":"Web View"}
+RESULT: {"using":"accessibility id","value":"Web View"}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/0D000000-0000-0000-5A23-000000000000/click - {}
+RESULT: {}
+COMMAND: GET /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/0D000000-0000-0000-5A23-000000000000/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="ios.iphone14promax.Sample_iOS_App" name="should navigate to Local Testing tab" time="3.845">
+      <system-out><![CDATA[
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/execute/sync - {"script":"<script> [19 bytes]","args":[]}
+RESULT: {"script":"<script> [19 bytes]","args":[]}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element - {"using":"accessibility id","value":"Local Testing"}
+RESULT: {"using":"accessibility id","value":"Local Testing"}
+COMMAND: POST /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/0E000000-0000-0000-5A23-000000000000/click - {}
+RESULT: {}
+COMMAND: GET /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc/element/0E000000-0000-0000-5A23-000000000000/displayed - {}
+RESULT: {}
+COMMAND: DELETE /session/b5f4e7a06483bbf4f58d1762ff876dda2711eacc - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
