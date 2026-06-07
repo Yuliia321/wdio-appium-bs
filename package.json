@@ -44,7 +44,7 @@
     "test:ios:reliable": "npm run appium:health && npm run test:ios"
   },
   "dependencies": {
-    "@wdio/spec-reporter": "^9.20.0",
+    "@wdio/spec-reporter": "^9.27.2",
     "axios": "^1.13.2",
     "dotenv": "^17.2.3"
   }
