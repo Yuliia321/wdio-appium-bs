@@ -1,6 +1,10 @@
 import { config as sharedConfig } from "./wdio.conf.js";
 import dotenv from "dotenv";
-dotenv.config(); // Load environment variables from .env file
+
+if (process.env.NODE_ENV !== 'CI') {
+    dotenv.config(); // Load .env file only in local environment; on CI secrets are injected via GitHub Actions
+}
+
 export const config = {
     ...sharedConfig,
     user: process.env.BROWSERSTACK_USERNAME,
@@ -15,7 +19,7 @@ export const config = {
         },
         'appium:options': {
           autoAcceptAlerts: true,
-          newCommandTimeout: 300000, // 5 minutes
+          newCommandTimeout: 300000,
         }
       }],
     services: [
@@ -24,12 +28,8 @@ export const config = {
           {
             app: process.env.BROWSERSTACK_IOS_APP_ID,
             buildIdentifier: "${BUILD_NUMBER}",
-            browserstackLocal: true,
-            testObservability: true,
-            testObservabilityOptions: { 
-                projectName: "BrowserStack IOS app testing",
-                buildName: 'browserstack IOS build',
-              },
+            browserstackLocal: false,
+            testObservability: false,
             debug: true,
             networkLogs: true,
             consoleLogs: "warn"
