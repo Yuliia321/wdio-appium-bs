@@ -33,7 +33,7 @@ jobs:
           BROWSERSTACK_IOS_APP_ID: ${{ secrets.BROWSERSTACK_IOS_APP_ID }}
           
         run: npm run test:ios:bs
-        - name: Generate Allure report
+      - name: Generate Allure report
         if: always()
         run: npx allure generate ./reporters/allure-results --clean -o allure-report
 
