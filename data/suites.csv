@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2534","should display UI Elements screen on launch","Sample iOS App","Sat Jun 13 04:50:32 UTC 2026","passed","Sat Jun 13 04:50:35 UTC 2026","","","",""
+"","2100","should navigate to Text screen","Sample iOS App","Sat Jun 13 04:50:35 UTC 2026","passed","Sat Jun 13 04:50:37 UTC 2026","","","",""
+"","5141","should navigate back and open Alert screen","Sample iOS App","Sat Jun 13 04:50:37 UTC 2026","passed","Sat Jun 13 04:50:42 UTC 2026","","","",""
+"","3297","should navigate to Local Testing tab","Sample iOS App","Sat Jun 13 04:50:46 UTC 2026","passed","Sat Jun 13 04:50:49 UTC 2026","","","",""
+"","3581","should navigate to Web View tab","Sample iOS App","Sat Jun 13 04:50:42 UTC 2026","passed","Sat Jun 13 04:50:46 UTC 2026","","","",""
